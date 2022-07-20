@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charles Cantin</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link rel="stylesheet" href="../css/stylepage.css">
+  </head>
+  <body>
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-transparent w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <i class="bi bi-arrow-bar-right"></i><i class="bi bi-arrow-bar-right"></i>Charles Cantin<i class="bi bi-arrow-bar-left"></i><i class="bi bi-arrow-bar-left"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Accueil</a>
+            <a class="nav-link" href="galerie.html">Galerie</a>
+            <a class="nav-link" href="Price.html">Tarifs et prestation</a>
+            <a class="nav-link  active"  aria-current="page" href="#">Contact</a>
+          </div>
+        </div>
+        <div>
+          <a onclick=" window.open('http://linkedin.com','_blank')"><button class="me-2 btn-social-share btn btn-outline-secondary"><i class="bi bi-linkedin"></i></button></a>
+          <a onclick=" window.open('http://facebook.com','_blank')"> <button class="me-2 btn-social-share btn btn-outline-secondary"><i class="bi bi-facebook"></i></button></a>
+          <a onclick=" window.open('http://twitter.com','_blank')"><button class="me-2 btn-social-share btn btn-outline-secondary"><i class="bi bi-twitter"></i></button></a>
+          <a onclick=" window.open('http://pinterest.com','_blank')"><button class="me-2 btn-social-share btn btn-outline-secondary"><i class="bi bi-pinterest"></i></button></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div >
+        <img src="../images/Appareil photo.png" class="img-fluid mx-auto d-block m-5" alt="Appareil photo">
+    </div>
+      <div class="contact">
+        <div class="inside">
+          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xdobqeoo" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Nom complet :</label>
+              <input type="text" name="name" id="full-name" placeholder="Nom et Prenom" required="">
+              <label for="email-address">Adresse Email : </label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <fieldset id="fs-frm-selects">
+                <label for="timely"> Le service dont vous desirez la prestation :</label>
+                <select name="timely" id="timely" required="">
+                  <option value="" selected="" disabled="">Choisir entre</option>
+                  <option value="1">Juste Moi</option>
+                  <option value="3">Pour Deux</option>
+                  <option value="5">Famille</option>
+                  <option value="7">Il etait une fois</option>
+                  <option value="9">Mon bebe</option>
+                  <option value="10">Autre</option>
+                </select>
+              </fieldset>
+              <label for="message">Autres informations que vous desirez me faire partager :</label></br>
+              <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Envoyer">
+            </fieldset>
+            <input id="envoyer" type="submit" value="Envoyer" >
+          </form>
+        </div>
+      </div> 
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</html>

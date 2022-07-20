@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+
+body, html {
+    background-color: rgb(71, 85, 94);
+    height: 100%;
+    font-family: 'Cormorant SC', serif, sans-serif;
+}
+
+.btn-social-share {
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+
+#backcolor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(6, 6, 6, 0.071);
+}
+
+#price{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(6, 6, 6, 0.086);
+    max-width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+.card:hover {
+    opacity: 0.5;
+
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(6, 6, 6, 0.086);
+    max-width: 80%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.description { 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+}
+#envoyer {
+    margin-top: 20px;  
+    background-color: rgba(221, 221, 221, 0.092);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#envoyer:hover {
+    background-color: rgba(221, 221, 221, 0.575);
+    transition: 0.5s;
+}
+span {
+    font-weight: bolder;
+}
+label {
+    margin: 10px;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: rgba(255, 255, 255, 0.911); 
+    color: rgb(2, 2, 2); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(0, 0, 0, 0.063); 
+    transition: 0.2s;
+
+}

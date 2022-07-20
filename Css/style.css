@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+
+body, html {
+    background-color: rgb(71, 85, 94);
+    height: 100%;
+background-image: url("../images/logosite.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Cormorant SC', serif, sans-serif;
+
+}
+
+
+.btn-social-share {
+    border-radius: 50%;
+}
